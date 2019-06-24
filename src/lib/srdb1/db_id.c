@@ -164,6 +164,7 @@ static int parse_db_url(struct db_id* id, const str* url)
 			switch(url->s[i]) {
 			case '@':
                                 /* Look for another @ symbol */
+				
 				if (foundanother == 0) {
                                         for (j=i+1; j < url->len; j++) {
                                                 if (url->s[j] == '@') {
